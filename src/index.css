@@ -20,6 +20,8 @@
 
     --transition: all 400ms ease;
 
+    --transition-slow: all 5s ease;
+
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
@@ -103,6 +105,23 @@ a:hover {
 .btn-primary {
     background: var(--color-primary);
     color: var(--color-bg);
+}
+
+.btn-disabled {
+    background: rgb(59, 57, 57);
+    color: var(--color-primary);
+    width: max-content;
+    display: inline-block;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    /* border: 1px solid var(--color-primary); */
+    transition: var(--transition);
+}
+
+.hidden {
+    transition: var(--transition);
+    display: none;
 }
 
 img {
