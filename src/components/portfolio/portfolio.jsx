@@ -1,50 +1,27 @@
 import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
+import IMG2 from '../../assets/loading.gif'
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shorts/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma'
+    title: 'Portfolio Website',
+    github: 'https://github.com/xrpq/react-portfolio-website-og',
+    demo: '',
+    hasDemo: false
   },
   {
     id: 2,
-    image: IMG1,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shorts/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma'
+    image: IMG2,
+    title: 'More to come!',
+    github: 'https://github.com/xrpq',
+    demo: 'https://dribbble.com/shots/3633228-Avanti-e-indietro-loader',
+    hasDemo: true
   },
-  {
-    id: 3,
-    image: IMG1,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shorts/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma'
-  },
-  {
-    id: 4,
-    image: IMG1,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shorts/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma'
-  },
-  {
-    id: 5,
-    image: IMG1,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shorts/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma'
-  },
-  {
-    id: 6,
-    image: IMG1,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shorts/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma'
-  },
+
+
 ]
 const portfolio = () => {
   return (
@@ -53,24 +30,45 @@ const portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-       {
-        data.map(({id, image, title, github, demo}) => {
-          return(
-            <article key ={id} className='portfolio__item'>
-            <div className='portfolio__item-image'>
-              <img src={image} alt={title} />
-            </div>
-            <h3>{title}</h3>
-            <div className="portfolio__item-cta">
-              <a href={github} className='btn'> Github</a>
-              <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
-            </div>
-          </article>
-          )
-        })
-       }
+        {
+          data.map(({ id, image, title, github, demo, hasDemo }) => {
 
-      
+            
+            if (hasDemo) {
+              return (
+                <article key={id} className='portfolio__item'>
+                  <div className='portfolio__item-image'>
+                    <img src={image} alt={title} />
+                  </div>
+                  <h3>{title}</h3>
+                  <div className="portfolio__item-cta">
+                    <a href={github} className='btn' target='_blank'> Github</a>
+                    <a href={demo} className='btn btn-primary' target='_blank' id="live-demo">gif credit</a>
+                    
+
+                  </div>
+                </article>
+                
+              ) 
+              
+            }
+
+            return (
+              
+              <article key={id} className='portfolio__item'>
+                <div className='portfolio__item-image'>
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className="portfolio__item-cta">
+                  <a href={github} className='btn' target='_blank'> Github</a>
+                </div>
+              </article>
+            )
+          })
+        }
+
+
       </div>
     </section>
   )
