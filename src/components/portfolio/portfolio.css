@@ -6,7 +6,7 @@
 }
 
 .portfolio__item {
-    background: var(--coloe-bg-variant);
+    background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
