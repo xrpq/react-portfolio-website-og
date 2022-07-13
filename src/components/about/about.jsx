@@ -24,19 +24,19 @@ const about = () => {
             <article className='about__card'>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small> 1+ Years studying</small>
+              <small> 1+ Years Studying</small>
             </article>
 
             <article className='about__card'>
               <HiOutlineAcademicCap className='about__icon' />
               <h5>Academics</h5>
-              <small> rising college sophomore</small>
+              <small> Rising College Sophomore</small>
             </article>
 
             <article className='about__card'>
               <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
-              <small> 10+ completed projects</small>
+              <small> 10+ Completed Projects</small>
             </article>
 
           </div>
@@ -45,6 +45,9 @@ const about = () => {
             I was born and raised in Harlem, New York &#128509;. I love reading, anime, and basketball. 
             I created this page so that you could get to know me and see my projects. 
             I am activley looking for internship and co-op oppurtunities so feel free to reach out if you think I would be interested!
+          </p>
+          <p>
+            Note: Not all my projects are on my website at the moment, I am actively working on making github repositories for them!
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
