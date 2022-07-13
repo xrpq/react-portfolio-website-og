@@ -30,7 +30,7 @@ const about = () => {
             <article className='about__card'>
               <HiOutlineAcademicCap className='about__icon' />
               <h5>Academics</h5>
-              <small> rising college sohpomore</small>
+              <small> rising college sophomore</small>
             </article>
 
             <article className='about__card'>
@@ -41,9 +41,10 @@ const about = () => {
 
           </div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ex exercitationem magni
-            esse corporis magnam sint sit adipisci corrupti deleniti quo soluta sunt veritatis id saepe
-            dolore, provident ratione nobis?
+              Hey! Im Axel Boly, a sophomore at Northeastern University studying computer science. 
+            I was born and raised in Harlem, New York &#128509;. I love reading, anime, and basketball. 
+            I created this page so that you could get to know me and see my projects. 
+            I am activley looking for internship and co-op oppurtunities so feel free to reach out if you think I would be interested!
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
